@@ -29,9 +29,6 @@ app.use(morgan('tiny'))
 
 const notFoundMiddleware = require('./middleware/not-found')
 const errorHandlerMiddleware = require('./middleware/error-handler')
-
-
-
 app.use(notFoundMiddleware)
 app.use(errorHandlerMiddleware)
 
