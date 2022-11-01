@@ -12,9 +12,20 @@ const authenticateUser = async (req, res, next ) => {
   }catch(error){ 
     throw new CustomError.UnauthenticatedError('Authentication Invalid');
   }
-  next()
+};
+
+const authorizePermissions = (...roles) => {
+  return (req, res, next) => {
+    if (!roles.includes(req.user.role)) {
+      throw new CustomError.UnauthorizedError(
+        'Unauthorized to access this route'
+      );
+    }
+    next();
+  };
 };
 
 module.exports = {
-  authenticateUser
+  authenticateUser,
+  authorizePermissions
 }
