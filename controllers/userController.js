@@ -2,6 +2,7 @@ const User = require('../models/User');
 const {StatusCodes} = require('http-status-codes');
 const CustomError = require('../errors');
 
+
 const getAllUsers = async (req, res) =>{
   console.log(req.user);
   const users = await User.find({role:'user'}).select('-password')
@@ -30,7 +31,7 @@ const updateUserPassword = async (req, res) => {
   if (!oldPassword || !newPassword) {
     throw new CustomError.BadRequestError('Please provide both values');
   }
-  const user = await User.findOne({ _id: req.user.userId });
+  const user = await User.findOne({ _id: req.user.userId});
 
   const isPasswordCorrect = await user.comparePassword(oldPassword);
   if (!isPasswordCorrect) {
