@@ -10,11 +10,11 @@ const getSingleReview = async (req,res) =>{
   res.send('get single reviews');
 };
 
-const updateReview = async =>{
+const updateReview = async (req,res) =>{
   res.send('update review');
 };
 
-const deleteReview = async =>{
+const deleteReview = async (req,res)=>{
   res.send('delete review');
 };
 
