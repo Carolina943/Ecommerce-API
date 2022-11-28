@@ -1,5 +1,4 @@
-const { number } = require('joi');
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
 const ProductSchema = new mongoose.Schema({
   name:{
