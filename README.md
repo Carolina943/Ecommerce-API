@@ -51,9 +51,9 @@
 - setup authRoutes file
 - import all controllers
 - setup three routes
-- [] post('/register') post('/login') get('/logout')
-- [] import authRoutes as authRouter in the app.js
-- [] setup app.use('/api/v1/auth', authRouter)
+- post('/register') post('/login') get('/logout')
+- import authRoutes as authRouter in the app.js
+- setup app.use('/api/v1/auth', authRouter)
 
 #### Test Routes in Postman
 
@@ -358,3 +358,4 @@
 - [] cors (cookies!!!!)
 
 #### Deploy on Render
+[Render URL](https://render.com/)
