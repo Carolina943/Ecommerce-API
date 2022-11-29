@@ -355,7 +355,7 @@
 - [] helmet
 - [] xss-clean
 - [] express-mongo-sanitize
-- [] cors (cookies!!!!)
+- [] cors (cookies)
 
 #### Deploy on Render
 [Render URL](https://render.com/)
