@@ -2,5 +2,5 @@
 
 ## Hosted Project
 
-[E-Commerce API Render URL](https://ecommerce-api-nvhn.onrender.com)
+[E-Commerce API Documentation - Render URL](https://ecommerce-api-nvhn.onrender.com)
 
